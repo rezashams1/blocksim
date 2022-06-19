@@ -50,9 +50,8 @@ class SimulationWorld:
         # Set the monitor
         end_simulation = self._initial_time + self._sim_duration
         self._env.data = {
-            'start_simulation_time': datetime.utcfromtimestamp(
-                self._initial_time).strftime('%m-%d %H:%M:%S'),
-            'end_simulation_time': datetime.utcfromtimestamp(end_simulation).strftime('%m-%d %H:%M:%S'),
+            'start_simulation_time': datetime.now().strftime('%y-%m-%d %H:%M:%S'),
+            'end_simulation_time': '',
             'created_transactions': 0,
             'tx_propagation': {},
             'block_propagation': {}

@@ -1,6 +1,6 @@
 {
   "blockchain": "ethereum",
-  "locations": ["Tokyo", "Ohio", "Ireland"],
+  "locations": ["Tehran", "Helsinki", "Nuremberg"],
   "bitcoin": {
     "block_size_limit_mb": 1,
     "number_transactions_per_block": {
@@ -18,7 +18,7 @@
     }
   },
   "ethereum": {
-    "block_gas_limit": 2100000,
+    "block_gas_limit": 60000000,
     "tx_gas_limit": 21000,
     "orphan_blocks_probability": 0.0174,
     "message_size_kB": {

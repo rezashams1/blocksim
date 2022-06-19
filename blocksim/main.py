@@ -5,14 +5,15 @@ from blocksim.world import SimulationWorld
 from blocksim.node_factory import NodeFactory
 from blocksim.transaction_factory import TransactionFactory
 from blocksim.models.network import Network
+from datetime import datetime
+
+scenario_number = '12'
 
 
 def write_report(world):
-    path = 'output/report.json'
-    if not os.path.exists(path):
-        os.mkdir('output')
-        with open(path, 'w') as f:
-            pass
+    world.env.data['end_simulation_time'] = datetime.now().strftime('%y-%m-%d %H:%M:%S')
+
+    path = 'output/report{}.json'.format(scenario_number)
     with open(path, 'w') as f:
         f.write(dump_json(world.env.data))
 
@@ -52,21 +53,28 @@ def run_model():
     network = Network(world.env, 'NetworkXPTO')
 
     miners = {
-        'Ohio': {
-            'how_many': 0,
-            'mega_hashrate_range': "(20, 40)"
+        'Tehran': {
+            'how_many': 5,
+            'mega_hashrate_range': "(25, 40)"
         },
-        'Tokyo': {
-            'how_many': 2,
-            'mega_hashrate_range': "(20, 40)"
+        'Helsinki': {
+            'how_many': 5,
+            'mega_hashrate_range': "(25, 40)"
+        },
+        'Nuremberg': {
+            'how_many': 8,
+            'mega_hashrate_range': "(25, 40)"
         }
     }
     non_miners = {
-        'Tokyo': {
-            'how_many': 1
+        'Tehran': {
+            'how_many': 8
         },
-        'Ireland': {
-            'how_many': 1
+        'Helsinki': {
+            'how_many': 6
+        },
+        'Nuremberg': {
+            'how_many': 5
         }
     }
 
@@ -80,7 +88,7 @@ def run_model():
         node.connect(nodes_list)
 
     transaction_factory = TransactionFactory(world)
-    transaction_factory.broadcast(100, 400, 15, nodes_list)
+    transaction_factory.broadcast(100, 80, 15, nodes_list)
 
     world.start_simulation()
 

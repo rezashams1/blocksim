@@ -70,14 +70,14 @@ def get_from_file(file_path):
     return array(times)
 
 
-#x = get_from_file('')
-#x = array([ ])
+# x = get_from_file('')
+x = array([])
 # print(x)
 dst = Distribution()
-# dst.Fit(x)
-rands = dst.Random(100)
-print(rands)
-for rand in rands:
-    if rand < 0:
-        print(f'ALERT! {rand} negative delays')
-# dst.Plot(x)
+dst.Fit(x)
+# rands = dst.Random(100)
+# print(rands)
+# for rand in rands:
+#     if rand < 0:
+#         print(f'ALERT! {rand} negative delays')
+dst.Plot(x)

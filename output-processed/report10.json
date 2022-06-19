@@ -1,0 +1,1 @@
+{"start_simulation_time": "22-06-17 14:02:22", "end_simulation_time": "22-06-17 14:11:57", "created_transactions": 8000, "tx_propagation": {"sum": 3974944.573688507, "length": 8428320, "average": 0.4716176620831325}, "block_propagation": {"sum": 11588248391.57688, "length": 12204, "average": 949545.0992770304}}

@@ -1,0 +1,80 @@
+Helsinki -> Helsinki:
+
+client:
+Connecting to host 65.108.81.7, port 6001
+[  4] local 95.217.211.226 port 46142 connected to 65.108.81.7 port 6001
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  94.5 MBytes   793 Mbits/sec  493   4.20 MBytes
+[  4]   1.00-2.00   sec   114 MBytes   954 Mbits/sec  536   4.20 MBytes
+[  4]   2.00-3.00   sec   115 MBytes   965 Mbits/sec  239   4.20 MBytes
+[  4]   3.00-4.00   sec   116 MBytes   975 Mbits/sec   12   4.20 MBytes
+[  4]   4.00-5.00   sec   115 MBytes   965 Mbits/sec  201   4.20 MBytes
+[  4]   5.00-6.00   sec   114 MBytes   954 Mbits/sec  522   2.95 MBytes
+[  4]   6.00-7.00   sec   118 MBytes   986 Mbits/sec  218   2.95 MBytes
+[  4]   7.00-8.00   sec   115 MBytes   965 Mbits/sec  170   2.96 MBytes
+[  4]   8.00-9.00   sec   114 MBytes   954 Mbits/sec  439   2.96 MBytes
+[  4]   9.00-10.00  sec   116 MBytes   975 Mbits/sec   71   2.98 MBytes
+[  4]  10.00-11.00  sec   116 MBytes   975 Mbits/sec   85   2.99 MBytes
+[  4]  11.00-12.00  sec   115 MBytes   965 Mbits/sec  300   2.99 MBytes
+[  4]  12.00-13.00  sec   118 MBytes   986 Mbits/sec   39   3.00 MBytes
+[  4]  13.00-14.00  sec   115 MBytes   965 Mbits/sec   14   3.00 MBytes
+[  4]  14.00-15.00  sec   118 MBytes   986 Mbits/sec    0   3.00 MBytes
+[  4]  15.00-16.00  sec   116 MBytes   975 Mbits/sec  197   3.00 MBytes
+[  4]  16.00-17.00  sec   118 MBytes   986 Mbits/sec   41   3.00 MBytes
+[  4]  17.00-18.00  sec   116 MBytes   975 Mbits/sec  172   3.00 MBytes
+[  4]  18.00-19.00  sec  91.2 MBytes   765 Mbits/sec  612   2.13 MBytes
+[  4]  19.00-20.00  sec  86.2 MBytes   724 Mbits/sec    0   2.16 MBytes
+[  4]  20.00-21.00  sec  87.5 MBytes   734 Mbits/sec    0   2.18 MBytes
+[  4]  21.00-22.00  sec  90.0 MBytes   755 Mbits/sec    9   2.21 MBytes
+[  4]  22.00-23.00  sec  88.8 MBytes   744 Mbits/sec   50   2.24 MBytes
+[  4]  23.00-24.00  sec  88.8 MBytes   744 Mbits/sec    0   2.26 MBytes
+[  4]  24.00-25.00  sec  91.2 MBytes   765 Mbits/sec    0   2.29 MBytes
+[  4]  25.00-26.00  sec  92.5 MBytes   776 Mbits/sec   78   2.32 MBytes
+[  4]  26.00-27.00  sec  95.0 MBytes   797 Mbits/sec    0   2.35 MBytes
+[  4]  27.00-28.00  sec  93.8 MBytes   786 Mbits/sec   64   2.37 MBytes
+[  4]  28.00-29.00  sec  97.5 MBytes   818 Mbits/sec   22   2.40 MBytes
+[  4]  29.00-30.00  sec  95.0 MBytes   797 Mbits/sec  217   2.42 MBytes
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-30.00  sec  3.09 GBytes   883 Mbits/sec  4801             sender
+[  4]   0.00-30.00  sec  3.09 GBytes   883 Mbits/sec                  receiver
+iperf Done.
+
+server:
+Accepted connection from 95.217.211.226 port 46142
+[  5] local 65.108.81.7 port 6001 connected to 95.217.211.226 port 46142
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  90.1 MBytes   756 Mbits/sec
+[  5]   1.00-2.00   sec   113 MBytes   951 Mbits/sec
+[  5]   2.00-3.00   sec   115 MBytes   965 Mbits/sec
+[  5]   3.00-4.00   sec   116 MBytes   976 Mbits/sec
+[  5]   4.00-5.00   sec   117 MBytes   980 Mbits/sec
+[  5]   5.00-6.00   sec   112 MBytes   943 Mbits/sec
+[  5]   6.00-7.00   sec   116 MBytes   974 Mbits/sec
+[  5]   7.00-8.00   sec   115 MBytes   965 Mbits/sec
+[  5]   8.00-9.00   sec   116 MBytes   970 Mbits/sec
+[  5]   9.00-10.00  sec   115 MBytes   961 Mbits/sec
+[  5]  10.00-11.00  sec   117 MBytes   979 Mbits/sec
+[  5]  11.00-12.00  sec   115 MBytes   963 Mbits/sec
+[  5]  12.00-13.00  sec   116 MBytes   977 Mbits/sec
+[  5]  13.00-14.00  sec   117 MBytes   984 Mbits/sec
+[  5]  14.00-15.00  sec   116 MBytes   975 Mbits/sec
+[  5]  15.00-16.00  sec   116 MBytes   976 Mbits/sec
+[  5]  16.00-17.00  sec   118 MBytes   986 Mbits/sec
+[  5]  17.00-18.00  sec   115 MBytes   969 Mbits/sec
+[  5]  18.00-19.00  sec  92.1 MBytes   773 Mbits/sec
+[  5]  19.00-20.00  sec  86.5 MBytes   726 Mbits/sec
+[  5]  20.00-21.00  sec  87.7 MBytes   735 Mbits/sec
+[  5]  21.00-22.00  sec  88.6 MBytes   743 Mbits/sec
+[  5]  22.00-23.00  sec  89.2 MBytes   748 Mbits/sec
+[  5]  23.00-24.00  sec  89.6 MBytes   752 Mbits/sec
+[  5]  24.00-25.00  sec  91.8 MBytes   770 Mbits/sec
+[  5]  25.00-26.00  sec  91.8 MBytes   770 Mbits/sec
+[  5]  26.00-27.00  sec  94.8 MBytes   795 Mbits/sec
+[  5]  27.00-28.00  sec  94.9 MBytes   796 Mbits/sec
+[  5]  28.00-29.00  sec  96.6 MBytes   810 Mbits/sec
+[  5]  29.00-30.00  sec  94.9 MBytes   796 Mbits/sec
+[  5]  30.00-30.04  sec  4.54 MBytes  1.03 Gbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-30.04  sec  3.09 GBytes   882 Mbits/sec                  receiver
